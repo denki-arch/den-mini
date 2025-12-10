@@ -48,7 +48,7 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VaiuYH87z4kYfUcLPe14'
 };
 
-const octokit = new Octokit({ auth: '' });
+const octokit = new Octokit({ auth: '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' });
 const owner = 'INCONNU-BOY';
 const repo = 'mini-data';
 
