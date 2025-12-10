@@ -36,7 +36,7 @@ const config = {
     PREFIX: '.',
     MAX_RETRIES: 3,
     IMAGE_PATH: 'https://files.catbox.moe/eztx1h.jpg',
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/J2XN0uIzIXPI4csplXW0Uk?mode=wwt',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/LYsNnm6lbQtEaKPyQgwbPE?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: 'https://files.catbox.moe/hpp7yv.jpg',
     NEWSLETTER_JID: '120363296159420895@newsletter',
