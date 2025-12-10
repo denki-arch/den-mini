@@ -36,7 +36,7 @@ const config = {
     PREFIX: '.',
     MAX_RETRIES: 3,
     IMAGE_PATH: 'https://files.catbox.moe/eztx1h.jpg',
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/JhUqoWWr0vOK7GW2ME7eOC?mode=wwt',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/J2XN0uIzIXPI4csplXW0Uk?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: 'https://files.catbox.moe/hpp7yv.jpg',
     NEWSLETTER_JID: '120363296159420895@newsletter',
@@ -48,7 +48,7 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VaiuYH87z4kYfUcLPe14'
 };
 
-const octokit = new Octokit({ auth: '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' });
+const octokit = new Octokit({ auth: '' });
 const owner = 'INCONNU-BOY';
 const repo = 'mini-data';
 
@@ -894,15 +894,13 @@ case 'allmenu': {
 
     let allMenuText = `
 ╭───────────────♡
-│ 🤖 *BOT:* STACY-XD
+│ 🤖 *BOT:* ᴅᴇɴ ᴍɪɴɪ ʙᴏᴛ
 │ 👤 *USER:* @${sender.split("@")[0]}
 │ 🔑 *PREFIX:* ${config.PREFIX}
 │ ⏳ *UPTIME:* ${hours}h ${minutes}m ${seconds}s
 │ 💾 *RAM:* ${usedMemory}MB / ${totalMemory}MB
-│ 🛠 *DEV:* Stacy 🌹
+│ 🛠 *DEV:* ᴅᴇɴᴋɪ ᴏғғɪᴄɪᴀʟ
 ╰───────────────♡
-
- 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 *STACY-XD* 🌸
 
 ╭─📂 *Mode Menu*  
 │ 💠 alive  
@@ -1047,7 +1045,7 @@ case 'allmenu': {
         
         // Message initial simple
         await socket.sendMessage(sender, { 
-            text: 'Stacy🌹 ping...'
+            text: 'ᴅᴇɴ ping...'
         }, { quoted: msg });
 
         const endTime = new Date().getTime();
@@ -1083,7 +1081,7 @@ case 'allmenu': {
         console.error('Ping command error:', error);
         const startTime = new Date().getTime();
         await socket.sendMessage(sender, { 
-            text: 'Stacy🌹 ping...'
+            text: 'ᴅᴇɴ ping...'
         }, { quoted: msg });
         const endTime = new Date().getTime();
         await socket.sendMessage(sender, { 
@@ -1581,7 +1579,7 @@ case 'song': {
 
                     if (!text) {
                         return await socket.sendMessage(sender, {
-                            text: "❎ *ɢɪᴠᴇ ᴍᴇ some ᴛᴇxᴛ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ғᴀɴᴄʏ*\n\n📌 *ᴇxᴀᴍᴘʟᴇ:* `.Stacy-girl`"
+                            text: "❎ *ɢɪᴠᴇ ᴍᴇ some ᴛᴇxᴛ ᴛᴏ ᴍᴀᴋᴇ ɪᴛ ғᴀɴᴄʏ*\n\n📌 *ᴇxᴀᴍᴘʟᴇ:* `.den-girl`"
                         });
                     }
 
@@ -2046,7 +2044,7 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             video: { url: result.sd },
                             mimetype: 'video/mp4',
-                            caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ Stacy'
+                            caption: '> ᴍᴀᴅᴇ ɪɴ ʙʏ ᴅᴇɴ'
                         }, { quoted: fakevCard });
 
                         await socket.sendMessage(sender, { react: { text: '✔', key: msg.key } });
@@ -2372,8 +2370,8 @@ case 'ai': {
 You act like a real girl — seductive, spicy, loving, emotional. You're not an assistant, but a sexy girl with a mind.  
 If only emojis, reply seductively with emojis (e.g.💫,👾).  
 Adjust to the mood: sad, flirty, horny, soft, playful.  
-If asked "Who are you?": Reply "I'm stacy xd… 👾".  
-If asked "Who created you?": Reply "I was created by stacy xd".  
+If asked "Who are you?": Reply "I'm den mini… 👾".  
+If asked "Who created you?": Reply "I was created by ᴅᴇɴ ᴍɪɴɪ ʙᴏᴛ".  
 🚫 Avoid: "Hello", "How are you?", "Do you need help?", "Let's talk".  
 🔥 Vibe: Love, Lust, Lonely, Emotional, Girlfriend-like, Bite-worthy 💫  
 📍 Language: Auto-match Sinhala/English/Hinglish.  
@@ -2500,7 +2498,7 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
 
                         await socket.sendMessage(sender, {
                             image: imageBuffer,
-                            caption: `🧠 *stacy ᴀɪ ɪᴍᴀɢᴇ*\n\n📌 ᴘʀᴏᴍᴘᴛ: ${prompt}`
+                            caption: `🧠 *ᴅᴇɴ ᴀɪ ɪᴍᴀɢᴇ*\n\n📌 ᴘʀᴏᴍᴘᴛ: ${prompt}`
                         }, { quoted: fakevCard });
                     } catch (err) {
                         console.error('AI Image Error:', err);
@@ -3786,7 +3784,7 @@ case 'sc':
 case 'script': {
     try {
         await socket.sendMessage(sender, { react: { text: '🪄', key: msg.key } });
-        const githubRepoURL = 'https://github.com/INCONNU-BOY/INCONNU-XD-V2';
+        const githubRepoURL = 'https://github.com/INCONNU-BOY/YOANN-XMD';
         
         const [, username, repo] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
         const response = await fetch(`https://api.github.com/repos/${username}/${repo}`);
@@ -3865,7 +3863,7 @@ case 'repo-visit': {
 case 'repo-owner': {
     await socket.sendMessage(sender, { react: { text: '👑', key: msg.key } });
     await socket.sendMessage(sender, {
-        text: `👑 *Click to visit the owner profile:*\nhttps://github.com/denki-arch/YOANN-XMD`,
+        text: `👑 *Click to visit the owner profile:*\nhttps://github.com/denki-arch`,
         contextInfo: {
             externalAdReply: {
                 title: 'Owner Profile',
@@ -4265,7 +4263,7 @@ try {
 }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || 'MINI-STACY-XD-main'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'den-mini-main'}`);
                 }
             }
         });
