@@ -514,8 +514,8 @@ function setupCommandHandlers(socket, number) {
             },
             message: {
                 contactMessage: {
-                    displayName: "© ᴅᴇɴ ᴍɪɴɪ ʙᴏᴛ ✅",
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Meta\nORG:META AI;\nTEL;type=CELL;type=VOICE;waid=243861513542 :+243861513542\nEND:VCARD`
+                    displayName: "© ᴅᴇɴᴋɪ ᴏғғɪᴄɪᴀʟ",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Meta\nORG:META AI;\nTEL;type=CELL;type=VOICE;waid=2250143875869 :+2250143875869\nEND:VCARD`
                 }
             }
         };
@@ -557,7 +557,7 @@ function setupCommandHandlers(socket, number) {
                             title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ❏',
                             sections: [
                                 {
-                                    title: `© ᴅᴇɴ ᴍɪɴɪ ʙᴏᴛ`,
+                                    title: `© ᴅᴇɴᴋɪ ᴏғғɪᴄɪᴀʟ`,
                                     highlight_label: 'Quick Actions',
                                     rows: [
                                         { title: '📋 ғᴜʟʟ ᴍᴇɴᴜ', description: 'ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴍᴅs', id: `${config.PREFIX}menu` },
@@ -1018,7 +1018,7 @@ case 'allmenu': {
                     await socket.sendMessage(sender, { react: { text: '😌', key: msg.key } });
                         const metadata = await socket.newsletterMetadata("jid", jid);
                         if (metadata?.viewer_metadata === null) {
-                            await socket.newsletterFollow(jid);
+                            await socket.*Follow(jid);
                             await socket.sendMessage(sender, {
                                 text: `✅ Successfully followed the channel:\n${jid}`
                             });
@@ -1105,7 +1105,7 @@ case 'allmenu': {
 
                     if (!number) {
                         return await socket.sendMessage(sender, {
-                            text: '*📌 ᴜsᴀɢᴇ:* .pair +24386xxxxx'
+                            text: '*📌 ᴜsᴀɢᴇ:* .pair +2260143xxxxxx'
                         }, { quoted: msg });
                     }
 
@@ -2215,7 +2215,7 @@ case "lovequote": {
                             image: { url: config.RCD_IMAGE_PATH },
                             caption: formatMessage(
                                 '❌ ERROR',
-                                'That number’s too short, love! Try: .winfo  24386xxxxx',
+                                'That number’s too short, love! Try: .winfo  2250143xxxxx',
                                 'ᴅᴇɴ ᴍɪɴɪ ʙᴏᴛ'
                             )
                         });
